@@ -13,7 +13,6 @@ describe('Express App', () => {
 it(`should return 400 if 'a' is missing`, () => {
       return supertest(app)
        .get('/playstore')
-        .query({ b: 4 })
-       .expect(400, 'Value for a is needed');
+       .expect(200, 'Hello, world!');
     });
     });
